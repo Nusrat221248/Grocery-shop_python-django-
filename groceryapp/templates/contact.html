@@ -1,0 +1,56 @@
+{% load static %}
+<html>
+<head>
+  <title>Contact US</title>
+  <link rel="stylesheet" href="{% static 'CSS/contact.css' %}"
+</head>
+<body>
+{% include 'navigation.html' %}
+<div class="container">
+  <div class="innerwrap">
+
+    <section class="section1 clearfix">
+      <div class="textcenter">
+        <h1 class="shtext">Contact Us</h1>
+        <span class="seperator"></span>
+        <span class="shtext">Drop Us a Mail</span>
+      </div>
+    </section>
+
+    <section class="section2 clearfix">
+      <div class="col2 column1 first">
+        <iframe id="map-canvas" class="map_part" width="600"  height="450"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%&amp;height=100%&amp;hl=en&amp;q=Chattagram, Bangladesh&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">Powered by <a href="https://embedgooglemaps.com">embed google maps html</a> and <a href="https://starburstnotongamstop.org/">starburst not on gamstop</a></iframe>
+      </div>
+      <div class="col2 column2 last">
+        <div class="sec2innercont">
+          <div class="sec2addr">
+            <p>HN. 00, Your full address with pin code.</p>
+            <p><span class="collig">Phone :</span> Your Phone Number</p>
+            <p><span class="collig">Email :</span> You Email ID</p>
+            <p><span class="collig">Fax :</span> Your Fax Number</p>
+          </div>
+        </div>
+        <div class="sec2contactform">
+          <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
+          <form action="">
+            <div class="clearfix">
+              <input class="col2 first" type="text" placeholder="FirstName">
+              <input class="col2 last" type="text" placeholder="LastName">
+            </div>
+            <div class="clearfix">
+              <input class="col2 first" type="Email" placeholder="Email">
+              <input class="col2 last" type="text" placeholder="Contact Number">
+            </div>
+            <div class="clearfix">
+              <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
+            </div>
+            <div class="clearfix"><input type="submit" value="Send"></div>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</div>
+</body>
